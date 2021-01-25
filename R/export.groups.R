@@ -1,5 +1,5 @@
 
-#' Export the IPCAPS result in to a text file
+#' Export the IPCAPS result to a text file
 #'
 #' @description Export clustering result of
 #' \code{\link{ipcaps}} to text file called 'groups.txt'.
@@ -31,9 +31,8 @@
 #' # Importantly, bed file, bim file, and fam file are required
 #' # Use the example files embedded in the package
 #'
-#' \donttest{
-#' BED.file <- system.file("extdata","IPCAPS_example.bed",package="IPCAPS")
-#' LABEL.file <- system.file("extdata","IPCAPS_example_individuals.txt",package="IPCAPS")
+#' BED.file <- system.file("extdata","ipcaps_example.bed",package="IPCAPS")
+#' LABEL.file <- system.file("extdata","ipcaps_example_individuals.txt.gz",package="IPCAPS")
 #'
 #' my.cluster <- ipcaps(bed=BED.file,label.file=LABEL.file,lab.col=2,out=tempdir())
 #'
@@ -41,7 +40,6 @@
 #' exported.data <- export.groups(my.cluster$output.dir)
 #' print(dim(exported.data))
 #' head(exported.data)
-#' }
 
 export.groups <- function(result.dir){
   leaf.node <- NULL

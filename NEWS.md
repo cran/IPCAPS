@@ -1,13 +1,24 @@
----
-title: "NEWS"
-author: "Kridsadakorn Chaichoompu"
-date: "11/06/2018"
-output:
-  html_document:
-    keep_md: yes
-  pdf_document: default
----
 
+# IPCAPS 1.1.8
+
+## Updates
+
+* Updated the package according to R v4.0.2
+* Reduce the sizes of example files
+
+# IPCAPS 1.1.7
+
+## Updates
+
+* Updated the functions to support re-analysis when the result files are moved to another directory; top.discriminator, ipcaps.
+* top.discriminator now accepts a percentile for filtering.
+
+
+# IPCAPS 1.1.6
+
+## Updates
+
+* Corrected descripton of export.gorups
 
 
 # IPCAPS 1.1.5
